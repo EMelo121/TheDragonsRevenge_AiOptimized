@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 10a3c2327e60339489783bb34ed9889e
+  - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: e9720a7394407494e88514b521807b8b
+  - enabled: 1
+    path: Assets/Scenes/ControlsMenu.unity
+    guid: 23cd263e74fd0d147b39ff22d9967d2c
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 56bc4353ab3c7044d97a165e07cc3488
+  - enabled: 1
+    path: Assets/Scenes/Overworld/TutorialCave.unity
+    guid: 70bc0f4dd17594344bdb4b3f959a57e3
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Forest.unity
+    guid: 9aac469edca877b4ea042e48fcaa13d3
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Village.unity
+    guid: 050d4e9566d9d274daf2ff1d74cfc4ac
+  - enabled: 1
+    path: Assets/Scenes/Overworld/DeepForest.unity
+    guid: 4b22bdb114c49b84c98cf666cde7ffa8
+  - enabled: 1
+    path: Assets/Scenes/Overworld/CastleTown.unity
+    guid: 2d48eccdd87e1b04497ef8a4ca425f56
+  - enabled: 1
+    path: Assets/Scenes/Combat/TutorialCombat.unity
+    guid: 92b3b4af6575f684cb1e6b39e3ccb7f4
+  - enabled: 1
+    path: Assets/Scenes/Combat/SingleWolfCombat.unity
+    guid: d098805623ef6fc418ddaaf1774cc4af
+  - enabled: 1
+    path: Assets/Scenes/Combat/FinalBattleCombat.unity
+    guid: d7786a26a24ad23459b35f0f748b23fd
+  - enabled: 1
+    path: Assets/Scenes/Combat/SingleVillagerCombat.unity
+    guid: f9e723799e9638d439773d88f179d718
+  - enabled: 1
+    path: Assets/Scenes/Combat/SingleHawkCombat.unity
+    guid: 0c7fe797d74597a44897ab2be47401f1
+  - enabled: 1
+    path: Assets/Scenes/Combat/MultipleWolfCombat.unity
+    guid: 0e9d345ecb99bbe42b2946a6731679bd
+  - enabled: 1
+    path: Assets/Scenes/Combat/MultipleHawkCombat.unity
+    guid: 90866c1d4a7ef3c41a9de98603a25e63
+  - enabled: 1
+    path: Assets/Scenes/Combat/Win Screen.unity
+    guid: 967ce62c8ec12c848ae3cbb2eb58bd72
+  - enabled: 1
+    path: Assets/Scenes/Combat/Lose Screen.unity
+    guid: 43cf2812935bfb646b33819f46d4883c
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 28de13fea5dcf0e48b12770bfd4cccd2
+  - enabled: 1
+    path: Assets/Scenes/Combat/MultipleVillagerCombat.unity
+    guid: 3a3b5f67a39d89245beb289abfa34539
+  - enabled: 1
+    path: Assets/Scenes/Combat/WolfHawkCombat.unity
+    guid: 9c4147ae95748f4439a97decd166502d
+  - enabled: 1
+    path: Assets/Scenes/Combat/TownVillagerCombat.unity
+    guid: 3a958d66f480f9748ac3767995ab5e7a
+  m_configObjects: {}

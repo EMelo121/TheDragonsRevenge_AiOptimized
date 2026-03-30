@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: ffb18d4e3413bf94db6a43039aca34ba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1148
+        width: 285
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5e66c795929574a99198b9c9a3850f
+      internalID: 1883764139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1160
+        width: 285
+        height: 290
+      alignment: 9
+      pivot: {x: 0.51, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef71a28b442fb1a42a8e290dadc7c1c4
+      internalID: -1673812894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1160
+        width: 285
+        height: 290
+      alignment: 9
+      pivot: {x: 0.591, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc08066252db3c4992aad4304712b62
+      internalID: -4970938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 808
+        width: 285
+        height: 290
+      alignment: 9
+      pivot: {x: 0.591, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e89384a42665d49bf5f4537eb88f45
+      internalID: 1049639299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 818
+        width: 285
+        height: 290
+      alignment: 9
+      pivot: {x: 0.547, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af69fbe6bd5c2645810c38b56731c9c
+      internalID: -1280799466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 827
+        width: 355
+        height: 290
+      alignment: 9
+      pivot: {x: 0.514, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc406271edc499489b01464ab9969d8
+      internalID: -1438384760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 440
+        width: 361
+        height: 130
+      alignment: 9
+      pivot: {x: 0.9174776, y: 0.438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd4b5fcddb23de4ca7d3eac5523bb0d
+      internalID: -299151299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 450
+        width: 182
+        height: 130
+      alignment: 9
+      pivot: {x: 0.8441303, y: 0.438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da157703122692043969d1a0e1400c43
+      internalID: 1773405569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 492
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ac2fbc6722abd4e86e65dce133a317
+      internalID: 1216317902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 152
+        width: 230
+        height: 106
+      alignment: 9
+      pivot: {x: 2.3206267, y: 0.438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d150f4de57219d46ba54e86dce07745
+      internalID: -1692607475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_BreathAttack_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 168
+        width: 559
+        height: 130
+      alignment: 9
+      pivot: {x: 0.966889, y: 0.438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b43f70d9b3c5b409548e3269874b8e
+      internalID: 1785777787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      big_dhurgon_BreathAttack_Sheet_5: -1438384760
+      big_dhurgon_BreathAttack_Sheet_7: 1773405569
+      big_dhurgon_BreathAttack_Sheet_4: -1280799466
+      big_dhurgon_BreathAttack_Sheet_1: -1673812894
+      big_dhurgon_BreathAttack_Sheet_8: -299151299
+      big_dhurgon_BreathAttack_Sheet_11: -2053660666
+      big_dhurgon_BreathAttack_Sheet_0: 1883764139
+      SmallDragon: -1094042085
+      big_dhurgon_BreathAttack_Sheet_9: 1785777787
+      big_dhurgon_BreathAttack_Sheet_6: 1216317902
+      big_dhurgon_BreathAttack_Sheet_2: -4970938
+      big_dhurgon_BreathAttack_Sheet_10: -1692607475
+      big_dhurgon_BreathAttack_Sheet_3: 1049639299
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

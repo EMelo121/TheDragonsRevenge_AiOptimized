@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 883038a3930f3a64399f57831e3f10e9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spear_attack1_2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 795
+        width: 173
+        height: 153
+      alignment: 9
+      pivot: {x: 0.48890713, y: 0.4860006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448af0f3a9303f4c9dad14b4792e6ab
+      internalID: -1762059375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 795
+        width: 175
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3479df5c988f0842aed0ef607ac2c18
+      internalID: -1908852079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_3
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 769
+        width: 181
+        height: 173
+      alignment: 9
+      pivot: {x: 0.475, y: 0.425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bb53d6528a64c43920a998ddfba1ea
+      internalID: 323149668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_4
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 765
+        width: 258
+        height: 192
+      alignment: 9
+      pivot: {x: 0.632, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04af425b6ec8dd04999fe524f626a9cf
+      internalID: 1006424164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 783
+        width: 175
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f78502ecb4b8394bb34a3696c7b6afe
+      internalID: -1846917087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 466
+        width: 241
+        height: 192
+      alignment: 9
+      pivot: {x: 0.614, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094c9efe015b5da43b4068a840cfe836
+      internalID: 1417573843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 449
+        width: 289
+        height: 235
+      alignment: 9
+      pivot: {x: 0.677, y: 0.395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5340003fed5543241b21b8132fc96c37
+      internalID: 1390511640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_8
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 446
+        width: 261
+        height: 214
+      alignment: 9
+      pivot: {x: 0.643, y: 0.345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5df4212f8bff8944903b516b729f79d
+      internalID: 1899438924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_7
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 456
+        width: 254
+        height: 188
+      alignment: 9
+      pivot: {x: 0.633, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672f540303bfe2c48a9a5350fd8da0bc
+      internalID: -389538919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_9
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 113
+        width: 213
+        height: 239
+      alignment: 9
+      pivot: {x: 0.346, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94712d2113598ff439d30c7cc3dc5ae0
+      internalID: 1479695815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 107
+        width: 239
+        height: 189
+      alignment: 9
+      pivot: {x: 0.35, y: 0.472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658d4ec22a94abe48b82cec88277ddc6
+      internalID: -1394623796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spear_attack1_11
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 140
+        width: 175
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16416fc8a6106a6408517594eaacb682
+      internalID: 1083432740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spear_attack1_30: -79184532
+      spear_attack1_25: 304858378
+      spear_attack1_0: -1846917087
+      spear_attack1_31: -12693679
+      spear_attack1_32: -1527334735
+      spear_attack1_21: 1165471337
+      spear_attack1_3: 323149668
+      spear_attack1_11: -809267432
+      spear_attack1_16: -1949974567
+      spear_attack1_20: 1062960330
+      spear_attack1_27: -1857630533
+      spear_attack1_9: 1479695815
+      spear_attack1_29: 1453578160
+      spear_attack1_10: -1394623796
+      spear_attack1_1: -1908852079
+      spear_attack1_7: -389538919
+      spear_attack1_14: -254945033
+      spear_attack1_5: 1417573843
+      spear_attack1_17: -690367535
+      spear_attack1_19: 373791761
+      spear_attack1_33: 1891419517
+      spear_attack1_26: -1229354468
+      spear_attack1_4: 1006424164
+      spear_attack1_23: -1574041299
+      spear_attack1_15: 1184031587
+      spear_attack1_2: -1762059375
+      spear_attack1_8: 1899438924
+      spear_attack1_28: 1277332325
+      spear_attack1_38: -88251133
+      spear_attack1_6: 1390511640
+      spear_attack1_34: 438348039
+      spear_attack1_24: 479504077
+      spear_attack1_35: -224586803
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

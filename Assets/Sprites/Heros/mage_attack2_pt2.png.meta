@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: 499a547b9b36c5641b61be6e7b688e8f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mage_attack2_pt2_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 988
+        width: 295
+        height: 208
+      alignment: 9
+      pivot: {x: 0.797, y: 0.5735245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b846a9ecd8dde4597b14bbc3eff055
+      internalID: -1995461998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1000
+        width: 288
+        height: 208
+      alignment: 9
+      pivot: {x: 0.791, y: 0.575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2719e556c18014a87277906cd9c29a
+      internalID: -1360569346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_2
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1027
+        width: 321
+        height: 177
+      alignment: 9
+      pivot: {x: 0.804, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef083a10cd053c468d86088e969253c
+      internalID: 754221980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_3
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1034
+        width: 286
+        height: 177
+      alignment: 9
+      pivot: {x: 0.784, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada6c95737c1ba54ab03a98a699642f1
+      internalID: 376818429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 775
+        width: 297
+        height: 177
+      alignment: 9
+      pivot: {x: 0.804, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5e0491c2ed0549b924096f023fee9
+      internalID: -830843411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 781
+        width: 306
+        height: 177
+      alignment: 9
+      pivot: {x: 0.811, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c98a01c75f7224ba2e341995b59ebd
+      internalID: -1681077097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_6
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 781
+        width: 293
+        height: 177
+      alignment: 9
+      pivot: {x: 0.803, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faed43f451f87d48a7fda2eb2a769b6
+      internalID: -1257051481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_8
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 795
+        width: 387
+        height: 177
+      alignment: 9
+      pivot: {x: 0.85, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b36c2e6e692884089dc45812c27573
+      internalID: 1355154581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 304
+        width: 163
+        height: 338
+      alignment: 9
+      pivot: {x: 0.606, y: 0.2611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61311f38465fea42b70f4bc3278749a
+      internalID: 778262806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_10
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 306
+        width: 139
+        height: 281
+      alignment: 9
+      pivot: {x: 0.618, y: 0.316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56aefea9f008234ab365a472b3fb88c
+      internalID: 1789661789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_attack2_pt2_11
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 309
+        width: 128
+        height: 179
+      alignment: 9
+      pivot: {x: 0.658, y: 0.477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1a7e6c91924234cb2aee80f1c208f3
+      internalID: 2109746314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mage_attack2_pt2_9: 778262806
+      mage_attack2_pt2_19: 1467387192
+      mage_attack2_pt2_4: -830843411
+      mage_attack2_pt2_18: -1179871388
+      mage_attack2_pt2_2: 754221980
+      mage_attack2_pt2_6: -1257051481
+      mage_attack2_pt2_7: 1829457908
+      mage_attack2_pt2_21: -1425645179
+      mage_attack2_pt2_0: -1995461998
+      mage_attack2_pt2_12: -1512332202
+      mage_attack2_pt2_5: -1681077097
+      mage_attack2_pt2_10: 1789661789
+      mage_attack2_pt2_22: -1293257501
+      mage_attack2_pt2_8: 1355154581
+      mage_attack2_pt2_1: -1360569346
+      mage_attack2_pt2_20: -1377908724
+      mage_attack2_pt2_3: 376818429
+      mage_attack2_pt2_16: -1383911954
+      mage_attack2_pt2_11: 2109746314
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

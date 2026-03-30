@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 68e03eaf1ef82b040b0c4c5a185b4fb3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1148
+        width: 285
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407a04ad4ab366f48a590c28f13cdc09
+      internalID: -1142671481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1136
+        width: 284
+        height: 300
+      alignment: 9
+      pivot: {x: 0.608, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c295049cba426049946bf317c6cd025
+      internalID: 2135479751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1123
+        width: 360
+        height: 294
+      alignment: 9
+      pivot: {x: 0.48, y: 0.492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a407c6a7265b2448ae6a29e600b339
+      internalID: 2054851387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 772
+        width: 294
+        height: 299
+      alignment: 9
+      pivot: {x: 0.485, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9139c177b4ff141a94aa2ee7905486
+      internalID: -1475903182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 774
+        width: 324
+        height: 299
+      alignment: 9
+      pivot: {x: 0.533, y: 0.486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3152945fcbb55c44abebc64829ab8c3d
+      internalID: -1925993245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 775
+        width: 294
+        height: 299
+      alignment: 9
+      pivot: {x: 0.485, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3de436ae7875047adb0bc17e948ceb
+      internalID: -1254283407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 400
+        width: 316
+        height: 290
+      alignment: 9
+      pivot: {x: 0.42, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222c62a5bbf66794fa1b297def1dccd3
+      internalID: 1901057604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 392
+        width: 385
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d733d56797234fa28bcb14c054609
+      internalID: 514730950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 412
+        width: 381
+        height: 290
+      alignment: 9
+      pivot: {x: 1.005, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32593b4b43eafee49be1c5c70b9c2714
+      internalID: -579469402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 32
+        width: 355
+        height: 290
+      alignment: 9
+      pivot: {x: 1.007, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea01818ae087cb44aa6283a4ebd6ccb4
+      internalID: -1663821420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 22
+        width: 166
+        height: 294
+      alignment: 9
+      pivot: {x: 2.39, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96878e148cf935849947a7cc7be746a4
+      internalID: 685426519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 23
+        width: 166
+        height: 317
+      alignment: 9
+      pivot: {x: 1.26, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31684ecef28d0a42970acc2d81dacc0
+      internalID: 135156719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 118
+        width: 58
+        height: 76
+      alignment: 9
+      pivot: {x: 8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499737e08b4f20345a07e8b7a46d8eaf
+      internalID: 1711557471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_dhurgon_TailAttack_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 130
+        width: 57
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b44fb2e931d6f54a88029ac2ce55c94
+      internalID: -2121199521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      big_dhurgon_TailAttack_Sheet_7: 514730950
+      big_dhurgon_TailAttack_Sheet_12: 685426519
+      big_dhurgon_TailAttack_Sheet_8: -579469402
+      big_dhurgon_TailAttack_Sheet_4: -1925993245
+      big_dhurgon_TailAttack_Sheet_3: -1475903182
+      big_dhurgon_TailAttack_Sheet_13: 1711557471
+      big_dhurgon_TailAttack_Sheet_2: 2054851387
+      big_dhurgon_TailAttack_Sheet_5: -1254283407
+      big_dhurgon_TailAttack_Sheet_0: -1142671481
+      Test: 1601086935
+      big_dhurgon_TailAttack_Sheet_9: -1663821420
+      big_dhurgon_TailAttack_Sheet_6: 1901057604
+      big_dhurgon_TailAttack_Sheet_14: 1763933379
+      big_dhurgon_TailAttack_Sheet_1: 2135479751
+      big_dhurgon_TailAttack_Sheet_15: -846358174
+      big_dhurgon_TailAttack_Sheet_10: -2121199521
+      big_dhurgon_TailAttack_Sheet_11: 135156719
+      big_dhurgon_TailAttack_Sheet_16: -924733894
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
