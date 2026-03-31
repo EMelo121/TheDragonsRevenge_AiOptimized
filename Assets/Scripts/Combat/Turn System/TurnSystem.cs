@@ -7,6 +7,15 @@ using UnityEngine.SceneManagement;
 
 public enum GameStates { Start, PlayerTurn, EnemyTurn }
 
+/// <summary>
+/// Controls the overall flow of battle, including:
+/// - battle startup
+/// - turn order
+/// - player and enemy actions
+/// - enemy death and battle end
+/// - UI panel state
+/// - battle taunt triggers
+/// </summary>
 public class TurnSystem : MonoBehaviour
 {
     [Header("Battle State")]
@@ -84,6 +93,10 @@ public class TurnSystem : MonoBehaviour
     private ReloadBattle reloadBattle;
     private CountEnemies countEnemies;
 
+    // Battle taunt system references.
+    private BattleTauntController battleTauntController;
+    private EnemyLevelTracker enemyLevelTracker;
+
     // Enemy turn-state flags used by existing enemy turn signal logic.
     public bool firstEnemyActive;
     public bool firstEnemyTurnCompleted;
@@ -107,6 +120,10 @@ public class TurnSystem : MonoBehaviour
         playerStats = FindObjectOfType<PlayerStats>();
         reloadBattle = FindObjectOfType<ReloadBattle>();
         countEnemies = FindObjectOfType<CountEnemies>();
+
+        // Battle taunt system references.
+        battleTauntController = FindObjectOfType<BattleTauntController>();
+        enemyLevelTracker = FindObjectOfType<EnemyLevelTracker>();
     }
 
     private void Start()
@@ -125,11 +142,25 @@ public class TurnSystem : MonoBehaviour
         turnCounter = 0;
     }
 
+    /// <summary>
+    /// Begins the battle by initializing UI, player values, enemies,
+    /// optional battle-start taunts, and then determining turn order.
+    /// </summary>
     private IEnumerator BeginBattle()
     {
         InitializeBattleUI();
         InitializePlayerBattleValues();
         InitializeBattleEnemies();
+
+        if (battleEnemies != null && battleEnemies.Length > 0)
+        {
+            EnemyBattleStats introEnemy = battleEnemies[0].GetComponent<EnemyBattleStats>();
+
+            if (introEnemy != null)
+            {
+                TriggerBattleTaunt(introEnemy, "battle_start");
+            }
+        }
 
         yield return new WaitForSeconds(2f);
 
@@ -144,7 +175,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Initializes the base combat UI state when the battle begins.
+    /// Initializes combat UI panels and submenus at battle start.
     /// </summary>
     private void InitializeBattleUI()
     {
@@ -159,7 +190,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Initializes the player's battle-facing UI values at combat start.
+    /// Initializes the player's displayed battle values at combat start.
     /// </summary>
     private void InitializePlayerBattleValues()
     {
@@ -189,7 +220,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Finds and initializes all active enemies in the battle using the shared EnemyBattleStats base class.
+    /// Finds all active enemies and initializes shared enemy UI fields.
     /// </summary>
     private void InitializeBattleEnemies()
     {
@@ -224,9 +255,9 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Refreshes the visible health and mana UI for a specific enemy.
+    /// Initializes a specific enemy's health and mana UI display.
     /// </summary>
-    /// <param name="enemyStats">The enemy whose UI should be initialized.</param>
+    /// <param name="enemyStats">The enemy whose UI will be initialized.</param>
     private void InitializeEnemyUI(EnemyBattleStats enemyStats)
     {
         if (enemyStats.enemyHealthText != null)
@@ -254,9 +285,32 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Triggers a battle taunt for the specified enemy and battle phase.
+    /// </summary>
+    /// <param name="enemy">The enemy generating the taunt.</param>
+    /// <param name="battlePhase">The battle event such as battle_start, enemy_turn, or enemy_defeated.</param>
+    private void TriggerBattleTaunt(EnemyBattleStats enemy, string battlePhase)
+    {
+        Debug.Log("TriggerBattleTaunt called. Enemy: " +
+            (enemy != null ? enemy.TauntEnemyName : "NULL") +
+            " Phase: " + battlePhase);
+
+        if (battleTauntController == null || enemy == null || playerStats == null)
+        {
+            Debug.LogWarning("TriggerBattleTaunt failed because a required reference was null.");
+            return;
+        }
+
+        string areaName = SceneManager.GetActiveScene().name;
+        battleTauntController.ShowTaunt(enemy, playerStats, areaName, battlePhase);
+    }
+
+    /// <summary>
+    /// Enables progression-based player attacks depending on current player level.
+    /// </summary>
     public void CheckPlayerProgression()
     {
-        // Determines which attacks the player can use based on current level.
         if (playerStats.playerCurrentLevel <= 2)
         {
             progressionButtons[0].gameObject.SetActive(false);
@@ -280,6 +334,10 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts the player's turn, updates UI state, regenerates mana,
+    /// and verifies death/vengeance conditions.
+    /// </summary>
     public void PlayerTurn()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -366,6 +424,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Opens the attack options panel.
+    /// </summary>
     public void AttackButton()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -418,6 +479,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Opens the magic options panel.
+    /// </summary>
     public void MagicButton()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -546,6 +610,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles the defend action and advances the turn afterward.
+    /// </summary>
     public IEnumerator PerformDefense()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -570,6 +637,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Enables enemy target buttons and cursors for currently active enemies.
+    /// </summary>
     public void ChooseTarget()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -589,6 +659,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Executes the player-selected attack once a target has been chosen.
+    /// </summary>
     public void EnemySelected()
     {
         int attackChosen = attackPicked;
@@ -633,6 +706,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Activates Vengeance Mode if the player has enough Vengeance.
+    /// </summary>
     public void ActivateVengeance()
     {
         if (gameState == GameStates.PlayerTurn && playerVengeanceMeter.hasVengeance == true)
@@ -694,6 +770,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Returns the player to the main combat menu and clears targeting state.
+    /// </summary>
     public void BackSelection()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -728,6 +807,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts the current enemy turn based on the turn counter.
+    /// </summary>
     public void EnemyTurn()
     {
         if (gameState != GameStates.EnemyTurn)
@@ -750,7 +832,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets which enemy slot is currently acting based on the turn counter.
+    /// Sets the currently active enemy flag based on the turn counter.
     /// </summary>
     private void SetEnemyActiveFlagsByTurnCounter()
     {
@@ -759,6 +841,9 @@ public class TurnSystem : MonoBehaviour
         thirdEnemyActive = turnCounter == 4;
     }
 
+    /// <summary>
+    /// Randomly determines whether the active enemy performs a physical or magical attack.
+    /// </summary>
     public IEnumerator DetermineEnemyAction()
     {
         DisablePlayerButtons();
@@ -781,12 +866,18 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Randomly selects an enemy attack type.
+    /// </summary>
     public void DecideAttackOption()
     {
         Debug.Log("Determining Enemy Action " + enemyAttackValue);
         enemyAttackValue = Random.Range(0, 7);
     }
 
+    /// <summary>
+    /// Performs the active enemy's physical attack and applies vengeance gain.
+    /// </summary>
     private IEnumerator EnemyAttack()
     {
         Debug.Log("The Enemy has hit you with a Physical Attack!");
@@ -797,6 +888,7 @@ public class TurnSystem : MonoBehaviour
 
         if (activeEnemy != null)
         {
+            TriggerBattleTaunt(activeEnemy, "enemy_turn");
             activeEnemy.PerformPhysicalAttack();
             AddVengeanceFromEnemyAttack(activeEnemy);
         }
@@ -810,6 +902,9 @@ public class TurnSystem : MonoBehaviour
         EndEnemyAttackCleanup();
     }
 
+    /// <summary>
+    /// Performs the active enemy's magical attack and applies vengeance gain.
+    /// </summary>
     private IEnumerator EnemyMagicAttack()
     {
         Debug.Log("The Enemy has hit you with a Magical Attack!");
@@ -820,6 +915,7 @@ public class TurnSystem : MonoBehaviour
 
         if (activeEnemy != null)
         {
+            TriggerBattleTaunt(activeEnemy, "enemy_turn");
             activeEnemy.PerformMagicalAttack();
             AddVengeanceFromEnemyAttack(activeEnemy);
         }
@@ -834,7 +930,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns the enemy currently acting based on the active turn flags.
+    /// Returns the enemy currently acting based on active flags.
     /// </summary>
     private EnemyBattleStats GetCurrentActiveEnemy()
     {
@@ -857,7 +953,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Safely gets the enemy at the requested slot.
+    /// Safely returns the enemy at the requested index from the active enemy list.
     /// </summary>
     private EnemyBattleStats GetEnemyAtIndex(int index)
     {
@@ -877,7 +973,8 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Adds vengeance points when the player is struck by an enemy attack.
+    /// Adds vengeance points when the player is hit by an enemy attack.
+    /// Bosses grant more vengeance than regular enemies.
     /// </summary>
     private void AddVengeanceFromEnemyAttack(EnemyBattleStats enemy)
     {
@@ -898,7 +995,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Resets state after an enemy attack and advances turn flow.
+    /// Resets common state after an enemy attack and advances the turn flow.
     /// </summary>
     private void EndEnemyAttackCleanup()
     {
@@ -943,6 +1040,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Advances the turn counter based on how many enemies remain and which enemy just acted.
+    /// </summary>
     public void TurnCheck()
     {
         Debug.Log("Checking to see whose turn it currently is during the battle...");
@@ -1011,6 +1111,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts the enemy action sequence for the current enemy slot.
+    /// </summary>
     public void EnemyTurnOrder()
     {
         if (turnCounter >= 2 && turnCounter <= 4)
@@ -1022,6 +1125,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Switches battle state based on the current turn counter.
+    /// </summary>
     public void CheckTurnIndicator()
     {
         Debug.Log("Checking who is making their actions during battle");
@@ -1055,6 +1161,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Turns off all submenus and targeting buttons.
+    /// </summary>
     public void TurnOffButtons()
     {
         returnButton.SetActive(false);
@@ -1066,6 +1175,9 @@ public class TurnSystem : MonoBehaviour
         SetAllEnemyButtons(false);
     }
 
+    /// <summary>
+    /// Disables the player's main combat buttons and panels.
+    /// </summary>
     public void DisablePlayerButtons()
     {
         Debug.Log("Turning off Player Buttons and Panels...");
@@ -1077,6 +1189,9 @@ public class TurnSystem : MonoBehaviour
         combatButtons[2].interactable = false;
     }
 
+    /// <summary>
+    /// Enables the player's main combat buttons and panels.
+    /// </summary>
     public void ActivatePlayerButtons()
     {
         Debug.Log("Turning on Player Buttons and Panels!");
@@ -1088,6 +1203,9 @@ public class TurnSystem : MonoBehaviour
         combatButtons[2].interactable = true;
     }
 
+    /// <summary>
+    /// Updates the player's turn indicator visibility.
+    /// </summary>
     public void ShowCharacterCircles()
     {
         if (gameState == GameStates.PlayerTurn)
@@ -1102,6 +1220,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles player defeat and starts the defeat transition.
+    /// </summary>
     public void PlayerDeath()
     {
         if (playerStats.healthStat <= 0)
@@ -1117,6 +1238,9 @@ public class TurnSystem : MonoBehaviour
         reloadBattle.LoadPreviousBattle();
     }
 
+    /// <summary>
+    /// Removes defeated enemies from battle and ends the battle if none remain.
+    /// </summary>
     public void EnemyDeath()
     {
         // AI revision note:
@@ -1147,6 +1271,8 @@ public class TurnSystem : MonoBehaviour
                     enemyButtons.RemoveAt(i);
                 }
 
+                TriggerBattleTaunt(enemyStats, "enemy_defeated");
+
                 Destroy(enemyObject, 0.4f);
                 countEnemies.enemyCombatSprites.RemoveAt(i);
                 countEnemies.enemyAmount--;
@@ -1166,6 +1292,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles cases where multiple enemies die at once.
+    /// </summary>
     public void MultipleEnemyDeath()
     {
         if (countEnemies.enemyAmount >= 1)
@@ -1206,6 +1335,9 @@ public class TurnSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Awards experience and returns the player to the correct overworld scene after battle.
+    /// </summary>
     public IEnumerator BattleEnded()
     {
         yield return new WaitForSeconds(2f);
@@ -1240,7 +1372,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Turns all enemy target buttons on or off safely.
+    /// Toggles all enemy target buttons on or off.
     /// </summary>
     private void SetAllEnemyButtons(bool isActive)
     {
@@ -1254,7 +1386,7 @@ public class TurnSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Turns all enemy target cursors on or off safely.
+    /// Toggles all enemy target cursors on or off.
     /// </summary>
     private void SetAllEnemyCursors(bool isActive)
     {
